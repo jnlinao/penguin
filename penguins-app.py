@@ -1,9 +1,15 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import pickle
+import numpy as np 
+import nltk 
+import regex
+import pickle 
+from PIL import Image
+from nltk.corpus import stopwords
+import plotly.express as px
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
+
 
 st.write(
 	"""
