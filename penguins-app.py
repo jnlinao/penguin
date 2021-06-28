@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 st.write(
 	"""
 	# ChangeGear Incident Classifier
-	Write or paste your ticket description for the machine learning algorithm to predict what IT Department to assign your incident to. 
+	Write or paste your ticket description for the machine learning algorithm to predict what IT Department to assign your incident to. Test 14:15
 	
 	"""
 
