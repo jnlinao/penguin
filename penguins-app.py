@@ -53,3 +53,46 @@ clf=model.named_steps['clf']
 trans_text=vect.transform(norm_text).toarray() #perform text extraction on text
 prediction=clf.predict(trans_text) #predict class using logistic regression
 probabilities=(clf.predict_proba(trans_text)) #predict probabilities using logistic regression
+
+#categorize class prediction corresponding with owner then output
+def output_prediction(label_prediction):
+    #identify the class prediction 
+    if label_prediction==0:
+        owner='EAM & MRO Inventory Support'
+    elif label_prediction==1:
+        owner='HRIS Team'
+    elif label_prediction==2: 
+        owner='IT Service Desk Team'
+    elif label_prediction==3:
+        owner='Network Team'
+    elif label_prediction==4:
+        owner='OTM Support'
+    elif label_prediction==5:
+        owner='Planning Support'
+    elif label_prediction==6:
+        owner='System Admin Team'
+    else:
+        owner='WMS Team'
+    return		(owner)
+
+#format dataframe of predictions
+def output_probabilities(array_prob):
+    prob_classes=array_prob[0][:]
+    prob_classes_num=[round(x,3) for x in prob_classes]
+    
+    classes = ['EAM & MRO Inventory Support', 'HRIS Team', 'IT Service Desk Team', 'Network Team', 'OTM Support', 
+          'Planning Support', 'System Admin Team', 'WMS Team']
+    ownerDict_num = dict(zip(classes, prob_classes_num))
+    ownerDf_num = pd.DataFrame(ownerDict_num.items(), columns=['Owner', 'Probability'])
+    
+    return(ownerDf_num)
+
+
+st.subheader('Model Team Prediction:')
+st.write(output_prediction(prediction))
+
+st.subheader('Model Team Probabilities:')
+st.write('Shows the probabilities of your ticket belonging to each team')
+prop_df = output_probabilities(probabilities)
+fig=px.bar(prop_df, x='Owner', y='Probability')
+st.plotly_chart(fig)
