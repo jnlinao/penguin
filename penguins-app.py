@@ -10,6 +10,9 @@ import plotly.express as px
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
+#Display Niagara logo
+image = Image.open('niagara_logo.jpg')
+st.image(image, width=250)
 
 st.write(
 	"""
