@@ -17,7 +17,7 @@ st.image(image, width=250)
 st.write(
 	"""
 	# ChangeGear Incident Classifier
-	Write or paste your ticket description for the machine learning algorithm to predict what IT Department to assign your incident to. Test 14:43
+	Write or paste your ticket description for the machine learning algorithm to predict what IT Department to assign your incident to. 
 	
 	"""
 
