@@ -23,6 +23,29 @@ st.write(
 
 	)
 
+#add sidebar panel
+st.sidebar.header("Welcome to ChangeGear Incidient Classifier")
+st.sidebar.write(
+    """
+    ## Purpose
+   
+    This prototype application serves to supplement the clarity of which IT Department teams should be responsible of your submitted ChangeGear request.
+    Due to the misclassification of tickets, many teams face an overload of "out of scope" tasks, resulting in a misalignment of responsibilities between teams and spent resources. 
+
+    ## How It Works
+    This app is built on top of a machine learning algorithm. The model has been trained with thousands of records of ChangeGear data in order to make the most precise prediction.
+    When a user inputs their incident issue, a prediction is provided. Below the predicted team is a probability chart of the prediction. This is done by Logistic Regression coefficients.
+    Please be as descriptive in your message as possible, avoiding any typos. It is important to note that this algorithm is still early in its development.
+
+    [See Github Repository](https://github.com/jnlinao/penguin)
+
+    #### Developed by Jacob Linao
+    #### Contact: [jacob7141299@gmail.com](mailto:john@example.com)
+
+    """
+
+    )
+
 #receive input text from user
 st.subheader('Enter Incident Summary')
 input_field = st.text_input("")
