@@ -122,3 +122,17 @@ st.write('Shows the probabilities of your ticket belonging to each team')
 prop_df = output_probabilities(probabilities)
 fig=px.bar(prop_df, x='Owner', y='Probability')
 st.plotly_chart(fig)
+
+#display test data as df
+new_data = pd.read_excel('NewDataForProductionTest.xls')
+st.write(
+    """
+    # Use Unseen Data on Model!
+
+    
+    """
+
+    )
+pd.set_option('display.max_colwidth', None)
+num_of_rows = st.slider('Select Number of Rows', 0, 50, 5)
+st.table(new_data.head(num_of_rows))
