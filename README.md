@@ -27,3 +27,4 @@ IT departments are facing the business issue of dealing with helpdesk incidents 
 * Designed a successful model logistic regression with an 87% precision score
 * Delivered a user-facing product with a simple UI and effective data communication of model
 * Saved thousands of $'s 
+* Convinved stakeholders of the importance of treating data as asset; importance of quality data collection
