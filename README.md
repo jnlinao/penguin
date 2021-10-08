@@ -28,3 +28,6 @@ IT departments are facing the business issue of dealing with helpdesk incidents 
 * Delivered a user-facing product with a simple UI and effective data communication of model
 * Saved thousands of $'s 
 * Convinced stakeholders of the importance of treating data as asset; importance of quality data collection
+
+### Project Visualizations
+![](images/app_demo.png)
