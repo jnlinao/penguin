@@ -30,4 +30,9 @@ IT departments are facing the business issue of dealing with helpdesk incidents 
 * Convinced stakeholders of the importance of treating data as asset; importance of quality data collection
 
 ### Project Visualizations
-![](images/app_demo.png)
+<img src="/images/app_demo.png" width="400" height="400">
+<img src="/images/it_teams.png" width="400" height="400">
+<img src="/images/model_eval.png" width="400" height="400">
+<img src="/images/time_series.png" width="400" height="400">
+
+
