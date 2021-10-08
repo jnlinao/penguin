@@ -1,10 +1,29 @@
-The modern enterprise requires a Change Management solution that is equipped to support any and all changes they may face. Through advanced automation and workflow, ChangeGear has been designed to streamline the entire change and release management process. Organizations are enabled to meet auditing and compliance requirements with ease. Universally, IT Service Management (ITSM) is an important corporate function responsible for leveraging innovation to increase value, maximizing user productivity, providing end-to-end tech services, and so much more.
-<br><br>
-Currently, **Niagara IT departments are facing the business issue** of dealing with ChangeGear Incidents that are (a) incorrectly assigned (b) out of the scope of what the corresponding team should be responsible for. **This leads to an inefficient allocation of department resources the misalignment of team goals, responsibilities, and accountability.** As a result, expectations and the execution of these teams may ultimately become skewed as perceived by end users. From working with the WMS team and leading a monthly meeting to perform descriptive analytics of tickets, there is a widespread concern surronding this dilemma. Our team faces an overwhelmingly high volume of tickets that are typically out of scope and incorrectly assigned. 
-<br><br>
-This opportunity proposes a potential solution for **Multi Classification via Supervised Machine Learning** to categorize support tickets based on a fixed number of business groups and department teams. We can easily scrape text and category from each ticket and train a model to associate certain words and phrases with a particular category. If incoming tickets are classified with a higher accuracy through a trained and tested model, this will lead to more team efficiency, saving a significant amount of time. Additionally, this proposed solution specifically addresses the faultiness of human error and perception: end users may not fully understand the roles and responsibilities of each IT team while IT Teams can equally contribute to this business error by accepting a mistaken ticket. **Resultantly, this leads to a cycle of poor IT Governance**.   
-<br><br>
-This analysis expects the following outcomes:
-1. Machine learning can provide immediate cost savings and more accurate predictions than the human counterpart.
-2. Better categorization of ticket assignment.
-3. Understanding of the words and features as specific issues/software/problems that are correlated with each team.
+### Project Background
+
+IT Service Management (ITSM) is an important corporate function responsible for leveraging innovation to increase value, maximizing user productivity, providing end-to-end tech services, and so much more.
+
+IT departments are facing the business issue of dealing with helpdesk incidents that are (a) incorrectly assigned (b) out of the scope of what the corresponding team should be responsible for. This leads to an inefficient allocation of department resources the misalignment of team goals, responsibilities, and accountability. As a result, expectations.
+
+
+
+
+### Project Challanges
+* Getting the data we need to build a reliable NLP model -- can the data be trusted? 
+* How can we ensure data quality?
+* What are the steps for data preprocessing?
+* What kind of solution will solve this issue while pleasing stakeholders (IT executives and organization end-users?)
+
+
+### Project Highlights
+
+* Advanced explaratory analytics to understand data
+* Advanced preprocessing to eliminate bad data, handle text corpus, and deal with missing data
+* Utilized under/over sampling to manage a severly imbalanced classification problem
+* Developed a model evaluation pipeline for highest performing classifier with the best parameters using grid search (Logistic Regression, Naive Bayes, Gradient Boosted Trees)
+* Optimized for precision over recall and accuracy
+
+### Project Solution
+
+* Designed a successful model logistic regression with an 87% precision score
+* Delivered a user-facing product with a simple UI and effective data communication of model
+* Saved thousands of $'s 
