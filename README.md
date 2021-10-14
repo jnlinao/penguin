@@ -1,6 +1,9 @@
 ## Web Application Link
 [ChangeGear Classifier](https://changegear-classifier.herokuapp.com/)
 
+<img src="https://github.com/jnlinao/penguin/blob/main/images/ezgif-2-a319a8f70d50.gif" width="500" height="500" />
+
+
 ### Project Background
 
 IT Service Management (ITSM) is an important corporate function responsible for leveraging innovation to increase value, maximizing user productivity, providing end-to-end tech services, and so much more.
@@ -33,7 +36,6 @@ IT departments are facing the business issue of dealing with helpdesk incidents 
 * Convinced stakeholders of the importance of treating data as asset; importance of quality data collection
 
 ### Project Visualizations
-<img src="/images/app_demo.png" width="400" height="400">
 <img src="/images/it_teams.png" width="400" height="400">
 <img src="/images/model_eval.png" width="400" height="400">
 <img src="/images/time_series.png" width="400" height="400">
